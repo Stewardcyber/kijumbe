@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Programmers - Tanzanian Software Development Company</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        .footer {
+            background-color: #1a365d;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue-900 sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-code text-white me-2 fs-4"></i>
+                <span class="fw-bold fs-4">Smart Programmers</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold mb-4">Innovative Software Solutions for Tanzania's Digital Future</h1>
+                    <p class="lead mb-5">We build cutting-edge applications that solve real-world problems and drive business growth across East Africa.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4 py-2 rounded-pill">
+                            <i class="fas fa-paper-plane me-2"></i> Get Started
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill">
+                            <i class="fas fa-laptop-code me-2"></i> Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="text-blue-900 fw-bold mb-4">About Smart Programmers</h2>
+                    <p class="lead text-gray-700">Based in Dar es Salaam, Tanzania, Smart Programmers is a leading software development company dedicated to delivering high-quality digital solutions tailored to the African market.</p>
+                    <p>Founded in 2018, we've grown to become one of Tanzania's most trusted tech partners, serving clients across various industries with innovative and scalable software solutions.</p>
+                    
+                    <div class="mt-5">
+                        <div class="d-flex mb-3">
+                            <div class="me-4 text-primary">
+                                <i class="fas fa-eye fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-blue-800">Our Vision</h4>
+                                <p>To be East Africa's premier software development company, driving digital transformation through innovative technology solutions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="me-4 text-primary">
+                                <i class="fas fa-bullseye fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-blue-800">Our Mission</h4>
+                                <p>To empower businesses and organizations in Tanzania and beyond with custom software solutions that enhance efficiency, productivity, and growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Our Team" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="text-blue-900 fw-bold">Our Services</h2>
+                <p class="lead text-muted">Comprehensive software solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 border-0 shadow-sm rounded-lg overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full inline-block">
+                                    <i class="fas fa-mobile-alt text-blue-600 fa-2x"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center text-blue-800 mb-3">Mobile App Development</h4>
+                            <p class="text-muted">We create custom mobile applications for iOS and Android platforms, designed to meet your specific business requirements and user needs.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Native and cross-platform apps</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> UI/UX focused design</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Tanzanian market expertise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 border-0 shadow-sm rounded-lg overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full inline-block">
+                                    <i class="fas fa-globe text-blue-600 fa-2x"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center text-blue-800 mb-3">Web Development</h4>
+                            <p class="text-muted">Professional web development services including responsive websites, web applications, and e-commerce solutions for businesses of all sizes.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Custom CMS solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> E-commerce platforms</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> SEO optimized</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 border-0 shadow-sm rounded-lg overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full inline-block">
+                                    <i class="fas fa-cogs text-blue-600 fa-2x"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center text-blue-800 mb-3">Custom Software</h4>
+                            <p class="text-muted">Tailored software solutions designed to streamline your business operations, improve efficiency, and provide competitive advantages.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Business process automation</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Enterprise solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Scalable architecture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 border-0 shadow-sm rounded-lg overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full inline-block">
+                                    <i class="fas fa-cloud text-blue-600 fa-2x"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center text-blue-800 mb-3">Cloud Solutions</h4>
+                            <p class="text-muted">Secure and scalable cloud computing services including migration, deployment, and management of cloud-based applications and infrastructure.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> AWS/Azure/GCP expertise</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Cloud security</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Cost optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 border-0 shadow-sm rounded-lg overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full inline-block">
+                                    <i class="fas fa-shield-alt text-blue-600 fa-2x"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center text-blue-800 mb-3">IT Consulting</h4>
+                            <p class="text-muted">Expert advice and strategic planning to help your business leverage technology for growth, efficiency, and digital transformation.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Technology roadmap</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Digital transformation</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> IT infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 border-0 shadow-sm rounded-lg overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full inline-block">
+                                    <i class="fas fa-headset text-blue-600 fa-2x"></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center text-blue-800 mb-3">Support & Maintenance</h4>
+                            <p class="text-muted">Reliable ongoing support and maintenance services to ensure your software systems run smoothly and stay up-to-date.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> 24/7 support options</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Regular updates</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Performance monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-blue-900 text-white">
+        <div class="container py-4">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="display-4 fw-bold" data-count="50">10</div>
+                    <p class="mb-0">Projects Completed</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="display-4 fw-bold" data-count="35">15</div>
+                    <p class="mb-0">Clients</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="display-4 fw-bold" data-count="12">12</div>
+                    <p class="mb-0">Team Members</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="display-4 fw-bold" data-count="5">5</div>
+                    <p class="mb-0">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="text-blue-900 fw-bold mb-4">Get In Touch</h2>
+                    <p class="mb-5">Ready to start your project or need more information? Contact us today and our team will get back to you promptly.</p>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex mb-3">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-map-marker-alt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-blue-800 mb-1">Location</h5>
+                                <p class="text-muted mb-0">Dar es Salaam, Tanzania</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-3">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-phone-alt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-blue-800 mb-1">Phone</h5>
+                                <p class="text-muted mb-0">+255 716183812</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="me-3 text-primary">
+                                <i class="fas fa-envelope fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-blue-800 mb-1">Email</h5>
+                                <p class="text-muted mb-0">info@smartprogrammers.co.tz</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-blue-700 hover:text-blue-900">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-pink-600 hover:text-pink-800">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="text-blue-900 mb-4">Send Us a Message</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary px-4 py-2">
+                                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-4">
+                        <i class="fas fa-code me-2"></i> Smart Programmers
+                    </h4>
+                    <p>Leading software development company in Tanzania, delivering innovative digital solutions since 2024</p>
+                    <p>© 2025 Smart Programmers. All rights reserved.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white-50 hover:text-white">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white-50 hover:text-white">About</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white-50 hover:text-white">Services</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white-50 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 hover:text-white">Mobile App Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 hover:text-white">Web Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 hover:text-white">Custom Software</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 hover:text-white">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Counter animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('[data-count]');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if(count < target) {
+                    const updateCount = () => {
+                        counter.innerText = Math.ceil(count + increment);
+                        if(count < target) {
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

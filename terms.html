@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Smart Programmers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS */
+        .terms-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 40vh;
+        }
+        
+        .term-card {
+            border-left: 4px solid #1e40af;
+            transition: all 0.3s ease;
+        }
+        
+        .term-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-radius: 8px;
+            border-left: 4px solid #1e40af;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue-900 sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-code text-white me-2 fs-4"></i>
+                <span class="fw-bold fs-4">Smart Programmers</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="terms-header d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Terms of Service</h1>
+                    <p class="lead">Last Updated: <span id="current-date"></span></p>
+                    <div class="mt-4">
+                        <a href="#terms-content" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill">
+                            <i class="fas fa-arrow-down me-2"></i> View Terms
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-blue-50 py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-blue-600"><i class="fas fa-home me-1"></i> Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Terms of Service</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Terms Content -->
+    <section id="terms-content" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top pt-3" style="top: 80px;">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-blue-900 text-white">
+                                <h5 class="mb-0">Quick Navigation</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush">
+                                    <a href="#introduction" class="list-group-item list-group-item-action">1. Introduction</a>
+                                    <a href="#services" class="list-group-item list-group-item-action">2. Services</a>
+                                    <a href="#user-obligations" class="list-group-item list-group-item-action">3. User Obligations</a>
+                                    <a href="#intellectual-property" class="list-group-item list-group-item-action">4. Intellectual Property</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 text-center">
+                            <a href="index.html#contact" class="btn btn-outline-primary">
+                                <i class="fas fa-question-circle me-2"></i> Have Questions?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <!-- Introduction -->
+                    <div class="term-card mb-5 p-4 bg-white rounded shadow-sm" id="introduction">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-blue-100 p-3 rounded-circle me-3">
+                                <i class="fas fa-file-contract text-blue-800 fa-lg"></i>
+                            </div>
+                            <h2 class="text-blue-900 mb-0">1. Introduction</h2>
+                        </div>
+                        <div class="ps-5 ms-3">
+                            <p>Welcome to Smart Programmers ("Company", "we", "our", "us"). These Terms of Service ("Terms") govern your access to and use of our website and services located at www.smartprogrammers.co.tz ("Services").</p>
+                            
+                            <div class="highlight-box p-4 my-4">
+                                <h5 class="text-blue-800 mb-3"><i class="fas fa-exclamation-circle me-2"></i> Important Notice</h5>
+                                <p class="mb-0">By accessing or using our Services, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the Services.</p>
+                            </div>
+                            
+                            <p>These Terms apply to all visitors, users, and others who wish to access or use our Services. Our Privacy Policy also governs your use of our Services and explains how we collect, safeguard, and disclose information that results from your use of our Services.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Services -->
+                    <div class="term-card mb-5 p-4 bg-white rounded shadow-sm" id="services">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-blue-100 p-3 rounded-circle me-3">
+                                <i class="fas fa-laptop-code text-blue-800 fa-lg"></i>
+                            </div>
+                            <h2 class="text-blue-900 mb-0">2. Services</h2>
+                        </div>
+                        <div class="ps-5 ms-3">
+                            <p>Smart Programmers provides custom software development services including but not limited to:</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Web application development</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Mobile application development</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Software consulting services</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Cloud computing solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-blue-600 me-2"></i> Maintenance and support services</li>
+                            </ul>
+                            
+                            <div class="alert alert-warning mt-4">
+                                <i class="fas fa-info-circle me-2"></i> <strong>Service Availability:</strong> Our Services are currently available to clients in Tanzania and select East African countries. We reserve the right to refuse service to anyone for any reason at any time.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- User Obligations -->
+                    <div class="term-card mb-5 p-4 bg-white rounded shadow-sm" id="user-obligations">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-blue-100 p-3 rounded-circle me-3">
+                                <i class="fas fa-user-shield text-blue-800 fa-lg"></i>
+                            </div>
+                            <h2 class="text-blue-900 mb-0">3. User Obligations</h2>
+                        </div>
+                        <div class="ps-5 ms-3">
+                            <p>When using our Services, you agree to:</p>
+                            <ol>
+                                <li class="mb-2">Provide accurate, current, and complete information as may be prompted by any forms on our Services ("Registration Data")</li>
+                                <li class="mb-2">Maintain the security of any passwords and identification</li>
+                                <li class="mb-2">Maintain and promptly update the Registration Data</li>
+                                <li class="mb-2">Be responsible for all activities that occur under your account</li>
+                                <li class="mb-2">Notify us immediately of any unauthorized use of your account</li>
+                            </ol>
+                            
+                            <div class="highlight-box p-4 my-4">
+                                <h5 class="text-blue-800 mb-3"><i class="fas fa-ban me-2 text-red-600"></i> Prohibited Activities</h5>
+                                <p>You may not use our Services to:</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-times-circle text-red-500 me-2"></i> Engage in any illegal or fraudulent activity</li>
+                                    <li class="mb-2"><i class="fas fa-times-circle text-red-500 me-2"></i> Distribute viruses or malicious code</li>
+                                    <li class="mb-2"><i class="fas fa-times-circle text-red-500 me-2"></i> Violate intellectual property rights</li>
+                                    <li class="mb-2"><i class="fas fa-times-circle text-red-500 me-2"></i> Harass, abuse, or harm others</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Intellectual Property -->
+                    <div class="term-card mb-5 p-4 bg-white rounded shadow-sm" id="intellectual-property">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-blue-100 p-3 rounded-circle me-3">
+                                <i class="fas fa-copyright text-blue-800 fa-lg"></i>
+                            </div>
+                            <h2 class="text-blue-900 mb-0">4. Intellectual Property</h2>
+                        </div>
+                        <div class="ps-5 ms-3">
+                            <p>The Services and their original content, features, and functionality are and will remain the exclusive property of Smart Programmers and its licensors. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Smart Programmers.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="p-3 bg-blue-50 rounded">
+                                        <h5 class="text-blue-800"><i class="fas fa-user-tie me-2"></i> Client Ownership</h5>
+                                        <p>Upon full payment, clients own the final delivered software product as specified in the project contract. Source code ownership terms are defined in individual project agreements.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 bg-blue-50 rounded">
+                                        <h5 class="text-blue-800"><i class="fas fa-tools me-2"></i> Our Tools</h5>
+                                        <p>We retain ownership of any proprietary tools, frameworks, or libraries used in development unless otherwise agreed in writing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Payments -->
+                    <div class="term-card mb-5 p-4 bg-white rounded shadow-sm" id="payments">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-blue-100 p-3 rounded-circle me-3">
+                                <i class="fas fa-money-bill-wave text-blue-800 fa-lg"></i>
+                            </div>
+                           
